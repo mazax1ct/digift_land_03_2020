@@ -1,6 +1,10 @@
 .footer {
   background-color: #fff;
-  
+
+  @media(min-width: 976px) {
+    border-right: 1px solid rgba(#1e1e1e, 0.1);
+  }
+
   &__inner {
     display: flex;
     justify-content: space-between;

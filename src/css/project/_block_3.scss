@@ -1,6 +1,10 @@
 .block-3 {
   background-color: #E9F7F8;
 
+  @media(min-width: 976px) {
+    border-right: 1px solid rgba(#1e1e1e, 0.1);
+  }
+
   &__inner {
     overflow: hidden;
     padding-left: 18px;
@@ -24,6 +28,10 @@
       padding-left: 72px;
       padding-top: 120px;
       padding-bottom: 120px;
+    }
+
+    @media(min-width: 1440px) {
+      padding-right: 53%;
     }
 
     @media(min-width: 1680px) {
@@ -56,7 +64,7 @@
       max-width: 346px;
     }
 
-    @media(min-width: 1680px) {
+    @media(min-width: 1440px) {
       font-size: 60px;
       line-height: 56px;
       margin-bottom: 24px;
@@ -133,6 +141,12 @@
       left: calc(43.2292% + 72px);
       top: 120px;
       width: calc(56.7708% - 72px);
+    }
+
+    @media(min-width: 1440px) {
+      left: calc(72px + 425px + 72px);
+      top: 120px;
+      width: calc(100% - 72px - 425px - 72px);
     }
 
     @media(min-width: 1680px) {

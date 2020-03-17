@@ -9,9 +9,13 @@
     background-image: url('../images/block_2/tablet.svg');
   }
 
+  @media(min-width: 976px) {
+    border-right: 1px solid rgba(#1e1e1e, 0.1);
+  }
+
   @media(min-width: 1200px) {
     background-image: url('../images/block_2/desktop.svg');
-    background-size: auto;
+    background-size: cover;
   }
 
   &__inner {
@@ -51,6 +55,7 @@
 
     @media(min-width: 1200px) {
       margin-bottom: 60px;
+      text-align: left;
     }
   }
 
@@ -71,7 +76,7 @@
       line-height: 37px;
     }
 
-    @media(min-width: 1680px) {
+    @media(min-width: 1440px) {
       font-size: 60px;
       line-height: 56px;
     }

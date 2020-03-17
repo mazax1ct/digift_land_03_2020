@@ -32,7 +32,7 @@
       }
 
       @media(min-width: 976px) and (max-width: 1199px) {
-        margin-left: -20%;
+        margin-left: -14%;
       }
 
       @media (min-width: 768px) and (orientation: portrait) {
@@ -147,9 +147,9 @@
     line-height: 41px;
     margin-bottom: 24px;
     margin-top: 0;
-    max-width: 261px;
+    max-width: 280px;
 
-    @media(min-width: 768px) and (min-width: 650px) {
+    @media(min-width: 768px) and (min-height: 600px) {
       margin-bottom: 12px;
     }
 
@@ -157,48 +157,44 @@
       font-size: 48px;
       line-height: 43px;
       max-width: 430px;
-      margin-bottom: 24px;
     }
 
-    @media(min-width: 1200px) and (min-height: 768px) {
+    @media(min-width: 1200px) and (min-height: 700px) {
       font-size: 66px;
       line-height: 61px;
-      max-width: 430px;
+      max-width: 450px;
     }
 
     @media(min-width: 1366px) and (min-height: 750px) {
       margin-bottom: 24px;
     }
 
-    span {
+    /*span {
       padding-right: 54px;
       position: relative;
 
       @media(min-width: 1200px) and (min-height: 768px) {
         padding-right: 67px;
       }
+    }*/
 
-      &::after {
-        background: url('../images/icons/bow/small.svg') no-repeat 100% 50% transparent;
-        content: '';
-        height: 33px;
-        left: auto;
-        position: absolute;
-        right: 1px;
-        top: 10px;
-        width: 56px;
+    &::after {
+      background: url('../images/icons/bow/small.svg') no-repeat 100% 50% transparent;
+      content: '';
+      display: inline-block;
+      height: 33px;
+      left: auto;
+      margin-left: -3px;
+      position: relative;
+      vertical-align: text-bottom;
+      width: 56px;
 
-        @media(min-width: 1200px) {
-          top: 14px;
-        }
-
-        @media(min-width: 1200px) and (min-height: 768px) {
-          background-image: url('../images/icons/bow/large.svg');
-          height: 42px;
-          right: 5px;
-          top: 24px;
-          width: 67px;
-        }
+      @media(min-width: 1200px) and (min-height: 700px) {
+        background-image: url('../images/icons/bow/large.svg');
+        height: 42px;
+        margin-left: -4px;
+        top: -3px;
+        width: 67px;
       }
     }
   }
